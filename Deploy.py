@@ -91,8 +91,8 @@ skills = []
 #-------------------------------------------------------------------------------------------------
 # MAIN CODE
 import pickle as pk
-model = pk.load(open(r'pkl/modelSAP.pkl', 'rb'))
-Vectorizer = pk.load(open(r'pkl/vectorizerSAPnew.pkl', 'rb'))
+model = pk.load(open(rf'{model_file_path}', 'rb'))
+Vectorizer = pk.load(open(rf'{vectorizer_file_path}', 'rb'))
 
 upload_file = st.file_uploader('Upload Your Resumes', type= ['docx','pdf'],accept_multiple_files=True)
   
