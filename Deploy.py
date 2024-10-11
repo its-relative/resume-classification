@@ -87,7 +87,8 @@ file_type=pd.DataFrame([], columns=['Uploaded File',  'Predicted Profile','Skill
 filename = []
 predicted = []
 skills = []
-
+model_file_path = "./pkl/modelSAPnew_lr5i4k.pkl"
+vectorizer_file_path = "./pkl/vectorizerSAPnew.pkl"
 #-------------------------------------------------------------------------------------------------
 # MAIN CODE
 import pickle as pk
