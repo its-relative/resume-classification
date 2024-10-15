@@ -10,7 +10,7 @@ import pandas as pd
 import streamlit as st
 import spacy
 
-spacy.cli.download("en_core_web_sm")
+# spacy.cli.download("en_core_web_sm")
 nlp = spacy.load("en_core_web_sm")
 
 from nltk.corpus import stopwords
@@ -96,7 +96,7 @@ import pickle as pk
 model = pk.load(open(rf'{model_file_path}', 'rb'))
 Vectorizer = pk.load(open(rf'{vectorizer_file_path}', 'rb'))
 
-upload_file = st.file_uploader('Upload Your Resumes', type= ['docx','pdf'],accept_multiple_files=True)
+upload_file = st.file_uploader('Upload Your Resumes', type= ['docx','pdf','doc'],accept_multiple_files=True)
   
 for doc_file in upload_file:
     if doc_file is not None:
